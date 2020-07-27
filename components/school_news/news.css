@@ -37,16 +37,15 @@
 }
 .newsbox .articles {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
   justify-content: space-between;
 }
 .newsbox .articles .left,
 .newsbox .articles .right {
   width: 45%;
-  height: 300px;
+  height: 146px;
   padding: 10px;
   display: flex;
-  border: 1px solid;
   border-radius: 10px;
 }
 .newsbox .articles .left:hover,
@@ -63,7 +62,7 @@
 }
 .newsbox .articles .left ul li,
 .newsbox .articles .right ul li {
-  line-height: 50px;
+  line-height: 20px;
   width: 100%;
   display: flex;
   flex: 1;
@@ -74,7 +73,7 @@
   flex: 3;
   text-decoration: none;
   display: block;
-  font-size: 30px;
+  font-size: 15px;
   color: black;
 }
 .newsbox .articles .left ul li a:hover,
@@ -85,7 +84,7 @@
 .newsbox .articles .right ul li span {
   flex: 2;
   text-align: right;
-  font-size: 30px;
+  font-size: 15px;
   color: lightgray;
 }
 /*# sourceMappingURL=news.css.map */
