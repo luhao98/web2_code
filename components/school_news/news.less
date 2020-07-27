@@ -1,86 +1,75 @@
-.newsbox{
-  margin-left: 180px;
-  margin-right: 180px;
-  .news_title{
-    height: 100px;
-    background-color: whitesmoke;
-    font-size: 58px;
-    font-weight: 700;
-    text-align: center;
-    color: #780000;
-    letter-spacing: 2px;
-    line-height: 100px;
-    position: relative;
-    .title{
-      display:inline-block;
+.news_box{
+  width: 1205px;
+  height: 200px;
+  margin: 65px auto;
+  box-sizing: border-box;
+
+  .title{
+    //background-color: green;
+    position:relative;
+    height: 32px;
+    span{
+      font-size: 32px;
       position: absolute;
+      color: #780000;
       left: 50%;
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
     }
-    .news_more{
-      display: inline-block;
-      a{
-        text-decoration: none;
-        color: black;
-        font-size: 28px;
-        font-weight: 100;
-        &:hover{
-          color:red;
-        }
-      }
+    a{
+      text-decoration: none;
       position: absolute;
       right: 0;
-      top: 0;
-      //transform: translateX(-100%) translateY(-100%);
+      top: 50%;
+      transform: translateY(-50%);
+      color: black;
+      &:hover{
+        color: red;
+      }
     }
-
   }
   .articles{
+    width: 100%;
+    height: 160px;
     display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-    .left,.right{
-      width: 45%;
-      height: 300px;
-      padding: 10px;
+    .news{
+      height: 150px;
+      width: 50%;
+      box-sizing: border-box;
+      border: 1px solid darkgrey;
+      list-style: none;
+      flex: 1;
+      margin-top: 10px;
+      padding: 15px;
+      border-radius: 5px;
       display: flex;
-      border: 1px solid;
-      border-radius: 10px;
+      flex-direction: column;
+
       &:hover{
-        box-shadow: 0 0 5px 5px lightgray;
+        box-shadow: 0 0 2px 2px grey;
       }
-      ul{
-        list-style: none;
-        width: 100%;
+      li{
+        flex:1;
         display: flex;
-        flex-direction: column;
-        padding: 10px;
-        li{
-          line-height: 50px;
-          width: 100%;
-          display: flex;
-          flex:1;
-          margin-top: 10px;
-          a{
-            flex: 3;
-            text-decoration: none;
-            display: block;
-            font-size: 30px;
-            color: black;
-            &:hover{
-              color: red;
-            }
-          }
-          span{
-            flex: 2;
-            text-align: right;
-            font-size: 30px;
-            color: lightgray;
+        a{
+          flex:3;
+          text-decoration: none;
+          color: black;
+          &:hover{
+            color: red;
           }
         }
+        span{
+          flex:2;
+          color: lightgrey;
+        }
       }
-
+    }
+    .left{
+      margin-right: 50px;
+    }
+    .right{
+      margin-left: 50px;
     }
   }
 }
