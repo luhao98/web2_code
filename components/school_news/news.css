@@ -1,0 +1,91 @@
+.newsbox {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+.newsbox .news_title {
+  height: 100px;
+  background-color: whitesmoke;
+  font-size: 58px;
+  font-weight: 700;
+  text-align: center;
+  color: #780000;
+  letter-spacing: 2px;
+  line-height: 100px;
+  position: relative;
+}
+.newsbox .news_title .title {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.newsbox .news_title .news_more {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.newsbox .news_title .news_more a {
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+  font-weight: 100;
+}
+.newsbox .news_title .news_more a:hover {
+  color: red;
+}
+.newsbox .articles {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.newsbox .articles .left,
+.newsbox .articles .right {
+  width: 45%;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.newsbox .articles .left:hover,
+.newsbox .articles .right:hover {
+  box-shadow: 0 0 5px 5px lightgray;
+}
+.newsbox .articles .left ul,
+.newsbox .articles .right ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.newsbox .articles .left ul li,
+.newsbox .articles .right ul li {
+  line-height: 50px;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  margin-top: 10px;
+}
+.newsbox .articles .left ul li a,
+.newsbox .articles .right ul li a {
+  flex: 3;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  color: black;
+}
+.newsbox .articles .left ul li a:hover,
+.newsbox .articles .right ul li a:hover {
+  color: red;
+}
+.newsbox .articles .left ul li span,
+.newsbox .articles .right ul li span {
+  flex: 2;
+  text-align: right;
+  font-size: 30px;
+  color: lightgray;
+}
+/*# sourceMappingURL=news.css.map */
