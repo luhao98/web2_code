@@ -1,0 +1,25 @@
+.slide_out {
+  overflow: hidden;
+  background-color: lightpink;
+  height: 300px;
+  position: relative;
+}
+.slide_box {
+  height: 100%;
+  width: 2160px;
+  background-color: aquamarine;
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 50px;
+}
+.slide_box li {
+  width: 540px;
+  height: 200px;
+  background-color: azure;
+}
+.slide_box li:hover {
+  transform: translateY(50%);
+  top: 50%;
+}
+/*# sourceMappingURL=slideshow.css.map */

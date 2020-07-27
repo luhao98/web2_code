@@ -1,0 +1,45 @@
+@import "base.css";
+.course_top {
+  background-color: #FFF;
+  display: flex;
+  padding: 20px;
+}
+.course_top > .left {
+  width: 450px;
+  height: 250px;
+}
+.course_top > .left > img {
+  width: 100%;
+  height: 100%;
+}
+.course_top > .right {
+  margin: 10px 20px;
+  position: relative;
+}
+.course_top > .right .right_top {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course_top > .right .right_top > h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.course_top > .right .right_top > p {
+  font-size: 18px;
+}
+.course_top > .right .right_bottom {
+  position: absolute;
+  bottom: 0;
+}
+.course_top > .right .right_bottom .b .btn {
+  width: 160px;
+  height: 45px;
+  background-color: #FF8000;
+  text-align: center;
+  line-height: 45px;
+  flex: 1;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=course_detail.css.map */
