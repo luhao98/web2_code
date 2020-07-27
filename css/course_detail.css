@@ -42,4 +42,129 @@
   flex: 1;
   color: #FFFFFF;
 }
+.c_bottom {
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+.c_bottom .c_bottom_left {
+  background-color: #666666;
+  width: 1000px;
+  margin-right: 20px;
+}
+.c_bottom .c_bottom_right {
+  background-color: #51b257;
+  width: 280px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.hxz-box1 {
+  background-color: #FFFFFF;
+  margin: auto;
+  width: 100%;
+  height: 165px;
+  box-sizing: border-box;
+}
+.hxz-box1 a {
+  text-decoration: none;
+  background-color: green;
+}
+.hxz-box1 a .teacher {
+  margin: auto;
+  box-shadow: 0 1px 2px #bbb;
+}
+.hxz-box1 a .teacher .tx {
+  padding: 20px;
+  text-align: center;
+}
+.hxz-box1 a .teacher .tx2 {
+  border-top: 1px solid #eee;
+  padding: 15px 20px;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #666;
+}
+.evaluate {
+  display: block;
+  background-color: white;
+  border: 1px #eee solid;
+  width: 280px;
+  height: 168px;
+}
+.evaluate .evaluate_t {
+  box-sizing: border-box;
+  width: 280px;
+  height: 50px;
+  font-size: 18px;
+  padding: 15px 20px;
+  border-bottom: 1px #999999 solid;
+}
+.evaluate .time {
+  display: block;
+  width: 160px;
+  height: 30px;
+  font-size: 12px;
+  margin: 3px 0px 0px 10px;
+  color: #999999;
+}
+.evaluate .evaluate_s {
+  padding: 15px 20px;
+}
+.evaluate .evaluate_s .comment_card {
+  width: 280px;
+  height: 118px;
+  margin: 0px 0px 10px;
+  padding: 0px 0px 10px;
+}
+.evaluate .evaluate_s .comment_card .comment_user {
+  display: flex;
+  width: 240px;
+  height: 35px;
+}
+.evaluate .evaluate_s .comment_card .comment_user .text {
+  position: relative;
+}
+.evaluate .evaluate_s .comment_card .comment_user .text .name1 {
+  margin: 1px 0px 0px 10px;
+  width: 206px;
+  height: 20px ;
+}
+.evaluate .evaluate_s .comment_card .comment_user .text .name1 .point {
+  margin: 0px 10px;
+  flex: 1;
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 70px;
+  height: 10px;
+}
+.evaluate .evaluate_s .comment_card .comment_user .text .name1 .point .star_gray {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 57px;
+  height: 100%;
+  background-image: url("../assets/images/tubiao.jpg");
+  background-position: -312px -58px;
+}
+.evaluate .evaluate_s .comment_card .comment_user .text .name1 .point .star_yel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 40px;
+  height: 100%;
+  background-image: url(tubiao.jpg);
+  background-position: 211px -336px;
+}
+.evaluate .evaluate_s .comment_card .comment_value {
+  width: 240px;
+  height: 40px;
+  font-size: 16px;
+  padding: 6px 0px;
+  border-bottom: 1px #999999 solid;
+  color: #333333;
+}
 /*# sourceMappingURL=course_detail.css.map */
