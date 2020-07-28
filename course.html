@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>课程</title>
+    <link rel="stylesheet" href="./css/course.css">
 </head>
 <body>
-<div>
-<!--导航栏-->
-<div class="bx daohang">
+<div style="background-color: #333333;">
     <div class="top">
         <div class="logo ">
-            <img src="./assets/images/logo.png" />
+            <a href="index.html"><img src="./assets/images/lkxy.png" /></a>
+        </div>
+        <div class="tab">
+            <ul class="menus">
+                <li><a href="teacher.html" >讲师</a></li>
+                <li><a href="#" class="active">课程</a></li>
+                <li><a href="news.html">新闻</a></li>
+            </ul>
         </div>
         <div class="ss ">
             <div class="search">
@@ -47,47 +52,20 @@
             </div>
         </div>
     </div>
-    <div class="bottom">
-        <div class="left">
-            <ul class="menus">
-                <li><a href="#" class="active">首页</a></li>
-                <li><a href="teacher.html">讲师</a></li>
-                <li><a href="course.html">课程</a></li>
-                <li><a href="news.html">新闻</a></li>
-            </ul>
-        </div>
-        <div class="right">
-            <ul class="hd">
-                <li class="fl iconfont icon-liwu">关注领取福利</li>
-                <li class="iconfont icon-xiaochengxu1">微信小程序</li>
-            </ul>
-        </div>
+</div>
+<!--筛选-->
+<div id="category">
+    <div class="t_class bx">
+        <dl><dt>筛选:</dt>
+            <dd class="selected">全部</dd>
+            <dd class="">python</dd>
+        </dl>
     </div>
 </div>
-<!--轮播图-->
-<div id="ad_focus">
-    <div class="container">
-        <ul>
-            <li class="active"><a href="#"><img src="./assets/images/banner1.png" alt=""></a></li>
-            <li><a href="#"><img src="./assets/images/banner2.jpg" alt=""></a></li>
-            <li><a href="#"><img src="./assets/images/banner3.png" alt=""></a></li>
-        </ul>
-    </div>
-    <div class="titles">
-        <ul>
-            <li class="active"><a href="#">史无前例, 老优惠了!</a></li>
-            <li><a href="#">跳楼价, 仅此一天</a></li>
-            <li><a href="#">明天关门, 不关是小狗!</a></li>
-        </ul>
-    </div>
-</div>
+
 <div class="bx">
     <!-- 课程卡片-->
     <div >
-        <div class="cards_title">
-            <div class="cards_t">- 课 . 程 . 卡 . 片 -</div>
-            <div class="gd"><a href="#">>更多</a></div>
-        </div>
         <div class="card_con">
             <div class="card_box">
                 <div class="top">
@@ -177,78 +155,7 @@
         </div>
 
     </div>
-    <!-- 明星导师-->
-    <div >
-        <div class="cards_title">
-            <div class="cards_t">- 明 . 星 . 讲 . 师 -</div>
-            <div class="gd"><a href="#">>更多</a></div>
-        </div>
-        <div class="tccontent">
-            <ul>
-                <li class="t_card">
-                    <div class="t_left">
-                        <a href="#">
-                            <img src="./assets/images/zsf.png" alt="t1">
-                            <div class="t_name">张三丰</div>
-                        </a>
-                    </div>
-                    <div class="t_right">
-                        <div class="t_name">腾讯CTO</div>
-                        <div class="t_dec">一代宗师, 出课极多</div>
-                    </div>
-                </li>
-                <li class="t_card">
-                    <div class="t_left">
-                        <a href="#">
-                            <img src="./assets/images/zcs.png" alt="t1">
-                            <div class="t_name">张翠山</div>
-                        </a>
-                    </div>
-                    <div class="t_right">
-                        <div class="t_name">协程CTO</div>
-                        <div class="t_dec">一双勾勾剑, 猛的狠的狠</div>
-                    </div>
-                </li>
-                <li class="t_card">
-                    <div class="t_left">
-                        <a href="#">
-                            <img src="./assets/images/yx.png" alt="t1">
-                            <div class="t_name">杨逍</div>
-                        </a>
-                    </div>
-                    <div class="t_right">
-                        <div class="t_name">阿里CEO</div>
-                        <div class="t_dec">一生逍遥</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- 学院新闻-->
-    <div>
-        <div class="cards_title">
-            <div class="cards_t">- 学 . 院 . 新 . 闻 -</div>
-            <div class="gd"><a href="#">>更多</a></div>
-        </div>
-        <div class="articles">
-            <div class="left color">
-                <ul>
-                    <li><a href="#">能够理解后端架构，与后端工程师配合</a><span>2020年07月18日 18:40:40</span></li>
-                    <li><a href="#">能够理解后端架构，与后端工程师配合</a><span>2020年07月18日 18:40:40</span></li>
-                    <li><a href="#">能够理解后端架构，与后端工程师配合</a><span>2020年07月18日 18:40:40</span></li>
-                </ul>
-            </div>
-            <div class="right color">
-                <ul>
-                    <li><a href="#">能够理解后端架构，与后端工程师配合</a><span>2020年07月18日 18:40:40</span></li>
-                    <li><a href="#">能够理解后端架构，与后端工程师配合</a><span>2020年07月18日 18:40:40</span></li>
-                    <li><a href="#">能够理解后端架构，与后端工程师配合</a><span>2020年07月18日 18:40:40</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </div>
-
 <!--底部栏-->
 <div class="index">
     <div class="left">
@@ -287,7 +194,5 @@
         </div>
     </div>
 </div>
-</div>
-<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

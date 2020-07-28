@@ -1,0 +1,88 @@
+html,body,p{
+    padding: 0;
+    margin: 0;
+}
+.index {
+    height: 230px;
+    width: 100%;
+    margin-top: 200px;
+    background-color: #474443;
+    padding: 30px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.left div {
+    height: 60px;
+    line-height: 60px;
+}
+.content a {
+    margin-right: 1px;
+    color: #fff;
+    text-decoration: none;
+}
+.content a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.footer {
+    color: #868686;
+}
+.right div{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.icon .weibo, .icon .weixin {
+    display: inline-block;
+    margin-left: 30px;
+    height: 64px;
+    width: 64px;
+    line-height: 84px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #868686;
+}
+
+.weixin {
+    position: relative;
+}
+
+.weibo:hover {
+    background-color: #E75B5F;
+}
+
+.weixin:hover {
+    background-color: #86DE46;
+}
+
+.weixin:hover .erweima {
+    display: block;
+}
+
+.erweima {
+    display: none;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: -25px;
+    bottom: 75px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    box-shadow:0 1px 3px rgba(255,255,255,.4)
+}
+
+.erweima img{
+    width: 120px;
+    height: 120px;
+}
+
+.kefu {
+    font-size: 20px;
+    font-weight: bold;
+}
+.time {
+    font-size: 10px;
+    margin-left: 10px;
+}

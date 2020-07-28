@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <title>课程1</title>
     <link rel="stylesheet" href="./css/course_detail.css">
+    <link rel="stylesheet" href="./js/course_detail.js">
 </head>
 <body style="background-color: #f5f5f5">
+<div style="background-color: #333333;">
+    <div class="top">
+        <div class="logo ">
+            <a href="index.html"><img src="./assets/images/lkxy.png" /></a>
+        </div>
+        <div class="tab">
+            <ul class="menus">
+                <li><a href="teacher.html" >讲师</a></li>
+                <li><a href="#" class="active">课程</a></li>
+                <li><a href="#">新闻</a></li>
+            </ul>
+        </div>
+        <div class="ss ">
+            <div class="search">
+                <div class="key ">
+                    <div class="select_title">
+                        全部
+                        <span class="select_icon iconfont icon-ai-arrow-down"></span>
+                    </div>
+                    <ul class="select_pane hide">
+                        <li class="xl selected">全部</li>
+                        <li class="xl">课程</li>
+                        <li class="xl">讲师</li>
+                        <li class="xl">文章</li>
+                    </ul>
+                </div>
+                <div class="intputs ">
+                    <input type="text" name="" placeholder="请输入关键字" />
+                </div>
+                <div class="btn ">
+                    <button class="btn1 iconfont">搜索</button>
+                </div>
+            </div>
+        </div>
+        <div class="reg">
+            <span>注册/登录</span>
+            <img class="header" alt="" src="./assets/images/user.jpg" />
+            <div class="operation_pane">
+                <ul class="operation">
+                    <li><a href="#">撩课学院 - itlike.com</a></li>
+                    <li>我的学习</li>
+                    <li>设置</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="route">
+    <div class="route_nav bx">
+        <ul>
+            <li><a href="course.html">课程列表</a></li>
+            <li>课程详情</li>
+        </ul>
+    </div>
+</div>
 <div class="bx">
-<!--    //课程详情-->
+<!--    课程详情-->
     <div class="course_top">
         <div class="left">
             <img src="./assets/images/lb1.png" alt="">
@@ -26,15 +82,22 @@
         </div>
     </div>
 <!--    选项卡-->
+    <div class="course_tab">
+        <div class="tab active">课程介绍</div>
+        <div class="tab">课程大纲</div>
+    </div>
 <!--    下部分-->
     <div class="c_bottom">
 
-        <div class="c_bottom_left"></div>
+        <div class="c_bottom_left">
+            <h2>适用人群</h2>
+            <p>1. 具备小程序基础;</p>
+            <p>2. 任何后端开发人员, 想上线自己的小程序产品(Python, Java, PHP...)</p>
+        </div>
 <!--  右-->
         <div class="c_bottom_right">
-            <!--右1-->
-            <div >
-                <div class="hxz-box1">
+            <!--右1:信息-->
+            <div class="hxz-box1">
                     <a href="http://lxt.itlike.com/client/#/teacher_detail/8">
                         <div class="teacher">
                             <div class="tx">
@@ -46,12 +109,57 @@
                         </div>
                     </a>
                 </div>
-            </div>
-<!--            右2-->
+            <!--右2：填写评论-->
             <div>
+                <div class="cons">
+                    <div class="cons_t">
+                        <p>评论</p>
+                    </div>
+                    <form action="/add-comment" method="post">
+                        <div class="cons_s">
+                            <div id="df">
+                                <p>给该课打分:</p>
+                                <div id="score">
+                       <span class="star__container">
+                           <input type="radio" name="rating" value="1" id="star-1" class="star__radio visuhide">
+                           <input type="radio" name="rating" value="2" id="star-2" class="star__radio visuhide">
+                           <input type="radio" name="rating" value="3" id="star-3" class="star__radio visuhide">
+                           <input type="radio" name="rating" value="4" id="star-4" class="star__radio visuhide">
+                           <input type="radio" name="rating" value="5" id="star-5" class="star__radio visuhide">
+                           <label class="star__item" for="star-1">
+<!--                               ::before-->
+                               <span class="visuhide">1 star</span>
+                           </label>
+                           <label class="star__item" for="star-2">
+<!--                               ::before-->
+                               <span class="visuhide">2 star</span>
+                           </label>
+                           <label class="star__item" for="star-3">
+<!--                               ::before-->
+                               <span class="visuhide">3 star</span>
+                           </label>
+                           <label class="star__item" for="star-4">
+<!--                               ::before-->
+                               <span class="visuhide">4 star</span>
+                           </label>
+                           <label class="star__item" for="star-5">
+<!--                               ::before-->
+                               <span class="visuhide">5 star</span>
+                           </label>
 
+                       </span>
+                                </div>
+                                <input type="hidden" value="10" name="course_id">
+                            </div>
+                            <textarea placeholder="请输入对该课程的评价" id="comment" name="content"></textarea>
+                            <div class="btn">
+                                <input type="submit" value="评论">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-<!--            右3-->
+            <!--右3：查看评价-->
             <div class="evaluate">
                 <div class="evaluate_t">
                     评价
@@ -84,6 +192,44 @@
         </div>
 
 
+    </div>
+</div>
+<!--底部栏-->
+<div class="index">
+    <div class="left">
+        <div class="top">
+            <p>撩课云课堂 是掘智公司（itlike.com）旗下专注职业技能提升的在线学习平台</p>
+        </div>
+        <div class="content">
+            <a href="javascript:void(0)">关于我们</a>
+            <a href="javascript:void(0)">联系我们</a>
+            <a href="javascript:void(0)">帮助中心</a>
+            <a href="javascript:void(0)">撩课论坛</a>
+        </div>
+        <div class="footer">
+            <p>©2018-2020 课程内容版权均归 撩课教育 所有 沪ICP备18036896号</p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="icon">
+            <div class="weibo">
+                <img src="./assets/images/weibo.png" alt="微博">
+            </div>
+            <div class="weixin">
+                <img src="./assets/images/weixin.png" alt="微信">
+                <div class="erweima">
+                    <img src="./assets/images/erweima.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div>
+            <p><span class="kefu">客服热线</span><span class="time">09:00-19:00</span></p>
+        </div>
+        <div>
+            <p class="kefu">0558-8888888</p>
+        </div>
     </div>
 </div>
 </body>
